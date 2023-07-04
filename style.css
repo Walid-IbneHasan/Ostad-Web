@@ -1,0 +1,220 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body{
+  font-size: 62.5%;
+  height: 100vh;
+}
+
+.shop-main{
+  height: 100%;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.shop-product{
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  
+  font-size: 1rem;
+  text-align: center;
+  
+}
+
+.product{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(43, 132, 190);
+  border-radius: 5px;
+  padding-bottom: 1.3rem;
+}
+
+.product-button{
+  padding: 1rem;
+  font-weight: bold;
+  background-color: rgb(166, 108, 233);
+  border-radius: 5px;
+  border: none;
+  transition: all .5s;
+}
+
+.product-button:hover{
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: rgb(116, 12, 81);
+  transform: translateY(-5px);
+}
+
+.product-option{
+  padding: 1rem;
+  background-color: rgb(119, 9, 82);
+  font-weight: bold;
+}
+.product-option:hover{
+  background-color:rgb(202, 24, 143) ;
+}
+
+.product-button:active {
+  transform: translateY(0px);
+}
+
+.shop-cart{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  
+  background-color: rgb(243, 231, 198);
+}
+
+.cart-title{
+  font-size: 2.6rem;
+  border-bottom: 1px solid gray;
+}
+
+.selected{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  border-bottom: 1px solid gray;
+}
+
+.selected-image{
+  width: 10rem;
+  padding: 1rem;
+  justify-self: center;
+}
+
+.selected-div{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: .7rem;
+}
+
+.selected-button{
+  align-self: center;
+  padding: 1rem;
+  background-color: rgb(63, 141, 98);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  width: 90%;
+  margin: 0 auto;
+  transition: all .5s;
+}
+
+.selected-button:hover{
+  cursor: pointer;
+  background-color: rgb(50, 214, 58);
+}
+
+.remove{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.increase{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.increase-button{
+  border-radius: 5px;
+  padding: .5rem;
+  display: block;
+  width: 5rem;
+  border: none;
+  background-color: rgb(161, 79, 77);
+  color: white;
+  font-weight: bold;
+  font-size: 1.8rem;
+  transition: all .5s;
+}
+
+.increase-button:hover{
+  cursor: pointer;
+  background-color: rgb(59, 59, 59);
+}
+
+.increase-title{
+  font-size: 1.8rem;
+}
+
+.calculaton{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.cal-div{
+  display: flex;
+  gap: 1rem;
+  justify-content: left;
+  align-items: center;
+}
+
+.cal-label{
+  font-size: 2rem;
+}
+
+.clac-input{
+  padding: .5rem;
+  font-size: 1.6rem;
+  background-color: rgb(47, 172, 130);
+  border: 2px solid solver;
+}
+.clac-input:hover{
+  background-color: rgb(31, 206, 148);
+}
+
+.clac-btn-dis{
+  width: 6rem;
+  padding: .7rem;
+  border: none;
+  background-color: rgb(187, 187, 187);
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all .5s;
+}
+
+.clac-btn-dis:hover{
+  cursor: pointer;
+  background-color: rgb(146, 146, 146);
+}
+
+.calc-btn{
+  background-color: rgb(29, 202, 150);
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: all .5s;
+}
+
+.calc-btn:hover{
+  cursor: pointer;
+  background-color: rgb(34, 163, 40);
+}
